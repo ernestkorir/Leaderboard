@@ -9,13 +9,13 @@ const form = document.getElementById('form');
 const gameApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/8hRoDBBos3wBxkJrnUA9/scores/';
 
 refresh.addEventListener('click', () => {
-    getScores(gameApi).then((data) => showScores(data.result));
-  });
-  
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    showError();
-    postScores(gameApi);
+  getScores(gameApi).then((data) => showScores(data.result));
 });
-  
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  showError();
+  postScores(gameApi);
+});
+
 window.onload = getScores(gameApi).then((data) => showScores(data.result));

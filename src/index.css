@@ -42,3 +42,12 @@ ul {
 #scores {
   border: solid;
 }
+
+#error-msg {
+  color: rgb(228, 28, 28);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  transition: all ease-in-out;
+  display: none;
+}

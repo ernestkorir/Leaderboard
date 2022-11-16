@@ -1,0 +1,44 @@
+main {
+  display: flex;
+  width: 80%;
+}
+
+.nameScore {
+  display: flex;
+}
+
+#titleRefresh {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  left: 3.1em;
+  gap: 70%;
+  align-items: center;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(223, 217, 217);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10em;
+  top: 4.5em;
+  gap: 1em;
+  align-items: end;
+}
+
+ul {
+  position: absolute;
+  width: 50%;
+  padding: 0;
+  left: 3.1em;
+  border: solid;
+  top: 8.5em;
+}
+
+#scores {
+  border: solid;
+}

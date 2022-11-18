@@ -7,10 +7,8 @@ import showError from './showError.js';
 const refresh = document.getElementById('refresh');
 const form = document.getElementById('form');
 const gameApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/8hRoDBBos3wBxkJrnUA9/scores/';
-const scoresContainer = document.getElementById('table');
 
 refresh.addEventListener('click', () => {
-  scoresContainer.innerHTML = '';
   getScores(gameApi).then((data) => showScores(data.result));
 });
 

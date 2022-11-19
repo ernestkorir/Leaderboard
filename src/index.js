@@ -1,8 +1,8 @@
 import './index.css';
-import postScores from './postScores.js';
-import getScores from './getScores.js';
-import showScores from './showScores.js';
-import showError from './showError.js';
+import postScores from './modules/postScores.js';
+import getScores from './modules/getScores.js';
+import showScores from './modules/showScores.js';
+import showError from './modules/showError.js';
 
 const refresh = document.getElementById('refresh');
 const form = document.getElementById('form');
